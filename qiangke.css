@@ -1,0 +1,229 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin: auto;
+}
+#qkcontent .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#qkcontent .switch input {display:none;}
+
+#qkcontent .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 12px;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#qkcontent .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#qkcontent input:checked + .slider {
+  background-color: #00ff00;
+}
+
+#qkcontent input:focus + .slider {
+  box-shadow: 0 0 1px #00ff00;
+}
+
+#qkcontent input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+#qkcontent .slider.round {
+  border-radius: 34px;
+}
+
+#qkcontent .slider.round:before {
+  border-radius: 50%;
+}
+#qksettings{
+	top:20px;
+	left: 0px;	
+	position:fixed;
+	font-weight: 600;
+	z-index:999999999999;
+}
+
+#qkicon{
+	color: #ffffff;
+	background-color: rgba(0, 170, 255, 0.7);
+	border:2px solid #00AAFF;
+	border-radius: 10px;
+}
+#qkcontent {
+	display: none;
+	font-family: 仿宋;
+	font-size: 24px;
+	width: 200px;
+	height: 160px;
+	
+	background-color:  rgba(255, 255, 255, 0.7);
+	border-color: #00AAFF;
+	border:2px solid;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 38px;
+	text-decoration: none;
+	color: #00AAFF;
+}
+#qkcontent a{
+	/*display: none;*/
+	color: #ffffff;
+	
+	border-radius: 5px;
+	line-height: 34px;
+	text-decoration: none;
+}
+
+#working{
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index:999999;
+	top:0px;
+	left: 0px;	
+	position:fixed;
+	text-align: center;
+}
+#dashang{
+	position:fixed;
+	width: 100%;
+	text-align: center;
+	top:10%;
+	z-index: 999999999;
+}
+#working #fangwuchu{
+	position:fixed;
+	margin-left: 40%;
+	font-size: 38px;
+	color: #ffaa00;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-family: 仿宋;
+	font-weight: 600;
+	z-index: 1;
+	
+}
+#working #qking{
+	font-size: 68px;
+	color: #d60b52;
+	background-color: rgba(0, 170, 255, 0.4);
+	font-family: 仿宋;
+	font-weight: 600;
+	z-index: 1;
+}
+#working #blockimg{
+	width: 100%;
+	position:fixed;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+#working #blockimg img{
+	height: 100vh;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 0.8;
+	vertical-align: middle;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 1180px) {
+    #working #blockimg img{
+		height: 105vh;
+		width: auto;
+    	opacity: 0.8;
+    }
+}
+.swal-overlay{
+	z-index:9999999;
+}
+
+#counter{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	font-size: 24px;
+	color: #00aaff;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-family: 仿宋;
+	font-weight: 600;
+	z-index: 1;
+}
+
+
+
+#working .loading {
+	position: absolute;
+	margin-top: 40vh;
+	margin-left:40%;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/* 只需要将其它的边的颜色设为透明就好 */
+	border: 3px solid transparent;
+	/* 我们需要隐藏其它三条边只显示一条边 */
+	border-top-color: #9370db;
+	animation: rotate 2s linear infinite;
+}
+#working .loading::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	/* 这边也是一样 用伪元素做边框 */
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #ba55d3;
+	animation: rotate 3s linear infinite;
+}
+#working .loading::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f0f;
+	/* 动画 时长 linear是匀速运动 infinite 是无限次运动 */
+	animation: rotate 1.5s linear infinite;
+}
+/* 下面定义一下动画 */
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		/* 顺时针旋转360度 */
+		transform: rotate(360deg);
+	}
+}
