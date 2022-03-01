@@ -474,7 +474,7 @@ script3.onload=script3.onreadystatechange=function(){
 
 function shownotice(){
 	var firsttime0 =rwCookie('r','firsttime');
-	var thisversion=122;
+	var thisversion=123;
 	if(firsttime0 != 'no'){
 		swal("声明", '本程序不得用于商业用途，仅做学习交流使用\n请勿滥用或用于盈利\n脚本不会上传您的任何个人信息\n脚本已经过混淆加密\n',{
 		  buttons: {
@@ -500,7 +500,6 @@ function shownotice(){
 					}
 					var tempEID=rwCookie('r','xuehao');
 					console.log("学号:"+rwCookie('r','xuehao'));
-					
 					var check211 = String( tempEID).search(String(2018211));
 					console.log("check211="+check211);
 
