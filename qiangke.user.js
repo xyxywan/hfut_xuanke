@@ -426,7 +426,8 @@ function EDcode() {
 
 var script3=document.createElement('script');
 script3.setAttribute('type','text/javascript');
-script3.setAttribute('src','https://xyxywan.gitee.io/xuanke/update.js?ID='+String(randomNum(10000,99999)));
+script3.setAttribute('src','https://xyxywan.github.io/hfut_xuanke/update.js?ID='+String(randomNum(10000,99999)));
+//https://xyxywan.gitee.io/xuanke/update.js?ID
 document.head.appendChild(script3);
 
 script3.onload=script3.onreadystatechange=function(){
