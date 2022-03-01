@@ -6,6 +6,7 @@
 // @match        *://*.jxglstu.hfut.edu.cn/eams5-student/for-std/course-select/*
 // @match        *://jxglstu.hfut.edu.cn/eams5-student/*
 // @match        *://xyxywan.gitee.io/hfut_xuanke/test.html
+// @match        *://webvpn.hfut.edu.cn/http/77726476706e69737468656265737421faef469034247d1e760e9cb8d6502720ede479/eams5-student/for-std/course-select/*
 
 // @exclude
 // @supportURL   https://gitee.com/xyxywan/hfut_xuanke
@@ -78,6 +79,8 @@ function addcs(n){
 }
 //、、、、、、、、、111111122222222222
 function checkurl(){
+    return 1;
+    /*
 	if(document.domain == "gitee.com"){
 		return 1;
 	}else if(document.domain == "xyxywan.gitee.io"){
@@ -90,6 +93,7 @@ function checkurl(){
 		swal("域名错误", "请检查当前是否位于选课页面\n 测试站点:https://xyxywan.gitee.io/hfut_xuanke/", "error");
 		return 0;
 	}
+    */
 }
 function checktimes(){
 	var qiangkecishu = Number(rwCookie('r','qiangkecishu'));
