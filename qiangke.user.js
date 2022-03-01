@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         合肥工业大学选课助手
-// @version      1.2.2
+// @version      1.2.3
 // @description  合肥工业大学第二轮选课选课脚本
 // @author       Yuxin Official
 // @match        *://*.jxglstu.hfut.edu.cn/eams5-student/for-std/course-select/*
@@ -116,7 +116,7 @@ function adddiv(){
 		tag1.appendTo('#qksettings');
 
 		var tag2 = $(
-		'<div id="qkcontent"><span id="labeltext">开始选课: </span><label class="switch"><input id="fucbox" name="box01" type="checkbox"><div class="slider round"></div></label><br><a href="https://yuxin.baklib-free.com/url/e751" target="_blank" style="background-color: rgba(0, 85, 255, 1);">&nbsp;教程&nbsp;</a>&nbsp;<a id="shengming"  style="cursor:pointer;background-color: rgba(170, 85, 255, 1.0);">&nbsp;声明&nbsp;</a><br><a href="https://gitee.com/xyxywan/hfut_xuanke" target="_blank" style="background-color: rgba(255, 170, 0, 1);">&nbsp;关于&nbsp;</a>&nbsp;<a onclick=document.getElementById("dashang").style.display="block"; style="cursor:pointer;background-color: rgba(255, 0, 0, 1);">&nbsp;打赏&nbsp;</a><br><a id="zengjia" style="cursor:pointer;background-color: rgba(0, 255, 81, 0.8);">学号:'+rwCookie('r','xuehao')+'</a><br></div>'
+		'<div id="qkcontent"><span id="labeltext">开始选课: </span><label class="switch"><input id="fucbox" name="box01" type="checkbox"><div class="slider round"></div></label><br><a href="https://yuxin.baklib-free.com/url/e751" target="_blank" style="background-color: rgba(0, 85, 255, 1);">&nbsp;教程&nbsp;</a>&nbsp;<a id="shengming"  style="cursor:pointer;background-color: rgba(170, 85, 255, 1.0);">&nbsp;声明&nbsp;</a><br><a href="https://github.com/xyxywan/hfut_xuanke" target="_blank" style="background-color: rgba(255, 170, 0, 1);">&nbsp;关于&nbsp;</a>&nbsp;<a onclick=document.getElementById("dashang").style.display="block"; style="cursor:pointer;background-color: rgba(255, 0, 0, 1);">&nbsp;打赏&nbsp;</a><br><a id="zengjia" style="cursor:pointer;background-color: rgba(0, 255, 81, 0.8);">学号:'+rwCookie('r','xuehao')+'</a><br></div>'
 		).attr({
 			});
 		tag2.appendTo('#qksettings');
@@ -218,7 +218,7 @@ function checkinnerText(){
             if(testStr == "教学班人数已满"){
                 showmessage('state1');
                 $(".close-modal").trigger("click");
-                setTimeout(function(){xuanke(); }, 500);
+                setTimeout(function(){xuanke(); }, 1000);
             }else if(testStr == "选课成功"){
                 console.log("选课成功");
 				tempcishu =Number(rwCookie('r','qiangkecishu'));
@@ -426,8 +426,7 @@ function EDcode() {
 
 var script3=document.createElement('script');
 script3.setAttribute('type','text/javascript');
-script3.setAttribute('src','https://xyxywan.github.io/hfut_xuanke/update.js?ID='+String(randomNum(10000,99999)));
-//https://xyxywan.gitee.io/xuanke/update.js?ID
+script3.setAttribute('src','https://xyxywan.gitee.io/xuanke/update.js?ID='+String(randomNum(10000,99999)));
 document.head.appendChild(script3);
 
 script3.onload=script3.onreadystatechange=function(){
@@ -500,6 +499,7 @@ function shownotice(){
 					}
 					var tempEID=rwCookie('r','xuehao');
 					console.log("学号:"+rwCookie('r','xuehao'));
+					
 					var check211 = String( tempEID).search(String(2018211));
 					console.log("check211="+check211);
 
