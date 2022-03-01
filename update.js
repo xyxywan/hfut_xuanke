@@ -3,7 +3,7 @@ function checkidNum(idNum){
 	return idlist.search(String(idNum));
 }
 function checkupdate(thisversion){
-	var lastversion=116;
+	var lastversion=117;
 	if(thisversion<lastversion){
 		var b=confirm("有新版本可用，是否更新？");
 		if(b==true){
@@ -19,7 +19,7 @@ function checkupdate(thisversion){
 function checkTestState(){
     	var b=confirm("此版本已经失效，请更新至最新版本");
 		if(b==true){
-			window.open("https://xyxywan.gitee.io/hfut_xuanke/qiangke.user.js");
+			window.open("https://xyxywan.github.io/hfut_xuanke/update.js");
 		}
 	return 0;
 }
