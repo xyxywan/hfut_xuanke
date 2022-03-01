@@ -3,7 +3,7 @@ function checkidNum(idNum){
 	return idlist.search(String(idNum));
 }
 function checkupdate(thisversion){
-	var lastversion=117;
+	var lastversion=123;
 	if(thisversion<lastversion){
 		var b=confirm("有新版本可用，是否更新？");
 		if(b==true){
