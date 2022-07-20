@@ -5,6 +5,8 @@
 // @author       Yuxin Official
 // @match        *://*.jxglstu.hfut.edu.cn/eams5-student/for-std/course-select/*
 // @match        *://jxglstu.hfut.edu.cn/eams5-student/*
+// @match        *://jw.ustc.edu.cn/*
+// @match        *://jw.ustc.edu.cn/for-std/course-select/*
 // @match        *://xyxywan.gitee.io/hfut_xuanke/test.html
 // @match        *://webvpn.hfut.edu.cn/http/77726476706e69737468656265737421faef469034247d1e760e9cb8d6502720ede479/eams5-student/for-std/course-select/*
 
