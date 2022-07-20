@@ -2,11 +2,11 @@
 
 #### 介绍
 此脚本适用于第二、三、四轮公选抢课
-
+PS:经测试还适用于中科大的选课
 #### 安装方法
 ↓↓↓
 
-[点击此处进入引导页面]([https://xyxywan.gitee.io/hfut_xuanke/](https://xyxywan.github.io/hfut_xuanke/))
+[点击此处进入引导页面](https://xyxywan.github.io/hfut_xuanke/)
 ---
 或者如果您的浏览器已经安装tampermonkey
 可直接[点击此处](https://xyxywan.github.io/hfut_xuanke/qiangke.user.js)安装脚本
