@@ -6,10 +6,10 @@
 #### 安装方法
 ↓↓↓
 
-[点击此处进入引导页面](https://xyxywan.gitee.io/hfut_xuanke/)
+[点击此处进入引导页面]([https://xyxywan.gitee.io/hfut_xuanke/](https://xyxywan.github.io/hfut_xuanke/))
 ---
 或者如果您的浏览器已经安装tampermonkey
-可直接[点击此处](https://xyxywan.gitee.io/hfut_xuanke/qiangke.user.js)安装脚本
+可直接[点击此处](https://xyxywan.github.io/hfut_xuanke/qiangke.user.js)安装脚本
 ### 使用说明
 
 从学校官网或者[点此进入教务](http://jxglstu.hfut.edu.cn/eams5-student/home)  
